@@ -1,7 +1,12 @@
-from flask import Flask, render_template,request,redirect,url_for # For flask implementation
-from bson import ObjectId # For ObjectId to work
-from pymongo import MongoClient
-import os
+#!/Library/Developer/CommandLineTools/usr/bin/python3
 
-import requests
-from random import randrange
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    app.run()
